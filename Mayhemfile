@@ -5,11 +5,12 @@ project: dns
 target: fuzzme
 
 # Base image to run the binary in.
-image: ghcr.io/zwimer/dns:latest
+# image: ghcr.io/zwimer/dns:latest
 
 # List of commands used to test the target
 cmds:
 
     # Command used to start the target, "@@" is the input file
     # (when "@@" is omitted Mayhem defaults to stdin inputs)
-    - cmd: /fuzzme @@
+    # - cmd: /fuzzme @@
+    - cmd: /fuzzme
